@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <defaults autowire="true" autoconfigure="true"/>
+
+        <service id="RiskyPlugin\Provider\ProductsProvider">
+            <argument type="service" id="product.repository"/>
+        </service>
+
+        <service id="RiskyPlugin\Provider\ProductsProviderInterface" alias="RiskyPlugin\Provider\ProductsProvider" />
+
+        <service id="RiskyPlugin\Reducer\RiskyProductsReducer"/>
+        <service id="RiskyPlugin\Reducer\RiskyProductsReducerInterface" alias="RiskyPlugin\Reducer\RiskyProductsReducer"/>
+
+
+
+        <service id="RiskyPlugin\Service\CustomFieldsInstaller">
+            <argument type="service" id="custom_field_set.repository"/>
+            <argument type="service" id="custom_field_set_relation.repository"/>
+        </service>
+
+        <service id="RiskyPlugin\Core\Checkout\Cart\Custom\RiskyProductCartValidator">
+            <tag name="shopware.cart.validator"/>
+        </service>
+    </services>
+</container>

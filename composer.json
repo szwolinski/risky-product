@@ -1,0 +1,27 @@
+{
+    "name": "risky-plugin/risky-product",
+    "description": "risky-plugin/risky-product",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "RiskyPlugin\\RiskyProduct",
+        "label": {
+            "de-DE": "Risky product",
+            "en-GB": "Risky product"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "RiskyPlugin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RiskyPlugin\\Tests\\": "tests/"
+        }
+    }
+}

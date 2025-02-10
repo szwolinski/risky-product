@@ -1,0 +1,8 @@
+{
+  "checkout": {
+    "too-much-risky-products": "Too much risky products in cart! Max amount is 1"
+  },
+  "error": {
+    "too-much-risky-products": "Too much risky products in cart! Max amount is 1"
+  }
+}

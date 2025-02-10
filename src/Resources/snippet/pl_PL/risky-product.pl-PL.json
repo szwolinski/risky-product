@@ -1,0 +1,8 @@
+{
+  "checkout": {
+    "too-much-risky-products": "Za dużo ryzykownych produktów w koszyku! Ich maksymalna ilość to 1"
+  },
+  "error": {
+    "too-much-risky-products": "Za dużo ryzykownych produktów w koszyku! Ich maksymalna ilość to 1"
+  }
+}
